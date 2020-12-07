@@ -23,7 +23,7 @@ for i in range(n): #
   p=int(input('Введите элемент списка 2 '))
   s2.append(p)
 c1=0
-c2=0
+c2=1
 for i in range(n):
   if i % 2 != 0:
     c1+=1
