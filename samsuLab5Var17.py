@@ -6,25 +6,25 @@ a = 3.8
 
 x1 = int(input("Введите начальное значение"))
 xn = int(input("Введите конечное значение"))
-dx = float(input("Введите шаг")) 
+dx = float(input("Введите шаг")) # Вводим значения
 x = x1
 
-while x <= xn:
+while x <= xn: # Пока х меньше или равен xn
   
   y = (1 - math.exp(-a*x))*math.log((a*x**2 - 1)/a*x**2 + 2)
-  print("при х = ", x, " y = ", y) 
-  x=x+dx
+  print("при х = ", x, " y = ", y)  # Печатаем формулу
+  x=x+dx # и увеличиваем икс
 
 
 #task 2
 
 x1 = int(input("Введите начальное значение"))
 xn = int(input("Введите конечное значение"))
-dx = int(input("Введите шаг")) 
+dx = int(input("Введите шаг"))  # Вводим значения 
 
-for i in range(x1, xn, dx):  
-  y = (1 - math.exp(-a*x))*math.log((a*x**2 - 1)/a*x**2 + 2)
-  print("при х = ", i, " y = ", y)
+for i in range(x1, xn, dx):  # цикл от начала до конца с шагом дельта икс
+  y = (1 - math.exp(-a*x))*math.log((a*x**2 - 1)/a*x**2 + 2) 
+  print("при х = ", i, " y = ", y) # Выводим значение выражения
 
 
 #task 3
