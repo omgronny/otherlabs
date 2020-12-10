@@ -19,4 +19,5 @@ for i in range(N):  # вывод
     if arr[i] != 0:
         print(arr[i], end=' ')
     else:
+        print(0)
         break  # если находим число равное нулю -- прерываем выполнение цикла
