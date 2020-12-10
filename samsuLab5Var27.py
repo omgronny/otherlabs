@@ -34,7 +34,7 @@ f = 0
 x=float(input("Введите значение переменной х"))
 e=float(input("Введите значение переменной e")) # Вводим значения
 
-while math.cos(n*x)/n > e: # Пока значение больше эпсилон
+while abs(math.cos(n*x)/n) > e: # Пока значение больше эпсилон
   f += math.cos(n*x)/n # Увеличиваем значение на формулу, данную в задании
   n+=1 # Увеличиваем значение n
 print('S = ', f) # Выводим результат
@@ -44,7 +44,7 @@ f = 0
 x=float(input("Введите значение переменной х"))
 e=float(input("Введите значение переменной e")) 
 
-while math.cos(n*x)/n > e:  
+while abs(math.cos(n*x)/n) > e:  
   f += math.cos(n*x)/n  
   n+=1 
 print('S = ', (f)) 
@@ -55,7 +55,7 @@ f = 0
 x=float(input("Введите значение переменной х"))
 e=float(input("Введите значение переменной e")) 
 
-while math.cos(n*x)/n > e: 
+while abs(math.cos(n*x)/n) > e: 
   f += math.cos(n*x)/n
   n+=1 
 print('S = ', (f)) 
